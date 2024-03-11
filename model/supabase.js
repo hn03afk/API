@@ -13,7 +13,7 @@ async function getNotes() {
 async function addNote(){
 const { data, error } = await supabase
   .from('control')
-  .insert({  nom: 'Denmark', prenom:'prout', score: 4 , triche: false})
+  .insert({  nom: 'dans', prenom:'back', score: 4 , triche: false})
   .select()
 
   return { data, error }
